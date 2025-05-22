@@ -1,0 +1,92 @@
+@import "../../styles/StyleVariables.scss";
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $secondary-background;
+  padding: 10px 40px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 6px rgba($pure-black, 0.1);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  cursor: pointer;
+}
+
+.navLinks {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: 1px solid $border-color;
+
+  .railTop,
+  .railBottom {
+    position: absolute;
+    height: 3px;
+    background-color: $primary-color;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+  }
+
+  .railTop {
+    top: -2px;
+  }
+
+  .railBottom {
+    bottom: -2px;
+  }
+
+  li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    a {
+      text-decoration: none;
+      color: $list-color;
+      font-weight: 500;
+      font-size: 16px;
+      padding: 13px 18px;
+      border-radius: 6px;
+      position: relative;
+
+      &.active {
+        color: $pure-black;
+        font-weight: 600;
+      }
+    }
+
+    a:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+
+.contactBtn {
+  // height: 30px;
+  // width: 100px;
+  background-color: $primary-color;
+  font-weight: 600;
+  color: $text-white !important;
+  border-radius: 4px;
+  margin-left: 12px;
+  transition: background-color 0.3s ease;
+  padding: 8px 8px;
+}
+
+.contactBtn:hover{
+  cursor: pointer;
+}

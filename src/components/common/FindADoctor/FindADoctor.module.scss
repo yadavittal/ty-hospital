@@ -1,0 +1,111 @@
+@import "../../../styles/StyleVariables.scss";
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $grey-color;
+    transition: 0.3s;
+    border-radius: 34px;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: $secondary-background;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: $primary-color;
+}
+
+input:checked+.slider::before {
+    transform: translateX(22px);
+}
+
+input:focus {
+    border: 2px solid $purple-color;
+    color: $text-grey;
+    background: $medium-grey-background;
+    outline: none;
+}
+
+.searchImage {
+    display: inline;
+    padding-right: 10px;
+}
+
+.searchButton {
+    border: 1px solid $primary-color;
+    border-radius: 15px;
+    background-color: $primary-color;
+    color: $text-white;
+    margin-left: 3%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 20px 15px 15px;
+}
+
+.findDoctorCard {
+    width: 100%;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px 0px 0px 70px;
+    box-shadow: 0 8px 20px rgba($pure-black, 0.25);
+}
+
+.label {
+    color: $text-grey;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.doctorstmt {
+    font-size: 20px;
+    color: $dark-grey-text;
+    font-weight: 500;
+}
+
+.input {
+    color: $text-grey;
+    background: $medium-grey-background;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-right: 2%;
+    font-weight: 600;
+    width: 25%;
+}
+
+@media (max-width: 1200px) {
+    .findDoctorCard {
+        margin: 10px 0px 0px 60px;
+    }
+
+    .searchButton {
+        padding: 5px 15px 10px 10px;
+        margin-left: 10px;
+    }
+}

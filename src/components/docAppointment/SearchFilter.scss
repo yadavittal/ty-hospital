@@ -1,0 +1,273 @@
+@import "../../styles/StyleVariables.scss";
+
+.searchfilter-wrapper {
+  font-family: "Souce Sans Pro", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  border: 1px solid $light-grey;
+
+  .search-form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .field-label {
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      display: flex;
+      height: 120px;
+      width: 100%;
+
+      input {
+        flex: 1;
+        height: $height;
+        padding-left: 28px;
+        border: 1px solid $form-purple;
+        border-right: none;
+        border-top-left-radius: $radius;
+        border-bottom-left-radius: $radius;
+        background: $form-input-bg;
+        font-size: 18px;
+        font-weight: 400;
+        outline: none;
+      }
+
+      .icon-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: $height;
+        background-color: $form-purple;
+        border: none;
+        border-top-right-radius: $radius;
+        border-bottom-right-radius: $radius;
+        cursor: pointer;
+      }
+    }
+
+    .hospital-wrapper,
+    .country-wrapper,
+    .dist-wrapper {
+      height: 120px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .inner-wrapper {
+        width: inherit;
+      }
+
+      .dropdowncommon {
+        width: inherit;
+        height: $height;
+        appearance: none;
+        font-family: "Source Sans Pro", sans-serif;
+        padding: 0 25px;
+        border: 1px solid $form-purple;
+        border-radius: $radius;
+        background: $form-input-bg;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: $form-input-placeholder;
+        outline: none;
+      }
+    }
+
+    .filters-wrapper {
+      width: 100%;
+
+      .inner-filter {
+        display: flex;
+        height: 80px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+          background: none;
+          border: none;
+          color: $text-red;
+          font-size: 18px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          font-weight: 400;
+          cursor: pointer;
+          font-family: "Souce Sans Pro", sans-serif;
+          margin-bottom: 20px;
+        }
+      }
+
+      .filterchips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 12px;
+
+        .chip-label div{
+          height: 54px;
+          display: flex;
+          align-items: center;
+          padding: 0px 18px;
+          border: 1px solid $form-purple;
+          border-radius: 4px;
+          font-weight: 600;
+          line-height: 100%;
+          letter-spacing: 0%;
+          background: $white-background;
+          color: $form-purple;
+          font-size: 15px;
+        }
+        .x-btn {
+          margin-left: 4px;
+          font-size: 18px;
+          color: $form-purple;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+
+      .radio-label {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 15px;
+        color: $form-purple;
+
+        input[type="radio"] {
+          accent-color: $form-purple;
+          width: 16px;
+          height: 16px;
+          margin-right: 6px;
+        }
+      }
+    }
+
+    .speciality-block {
+      width: 100%;
+      height: 478px;
+      margin-top: 20px;
+
+      .spec-header {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        input {
+          height: $height;
+          width: 100%;
+          padding: 0px 28px;
+          border-radius: $radius;
+          border: 1px solid $form-purple;
+          background: $form-input-bg;
+          font-size: 18px;
+          font-weight: 400;
+          outline: none;
+        }
+      }
+
+      .spec-dropdown {
+        width: 100%;
+        height: 298px;
+        border: 1px solid $form-purple;
+        display: flex;
+        flex-direction: column;
+
+        .list-wrapper {
+          display: flex;
+          flex-direction: column;
+          margin: 10px;
+          .list-drop {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            label {
+              font-weight: 400;
+              font-size: 18px;
+              letter-spacing: 0%;
+              font-family: "Poppins", sans-serif;
+              color: $form-input-placeholder;
+            }
+
+            input[type="checkbox"] {
+              accent-color: $form-purple;
+              border: 1px solid $form-purple;
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+
+        .load-more {
+          color: $form-purple;
+          font-family: "Source Sans Pro", sans-serif;
+          font-weight: 600;
+          line-height: 100%;
+          letter-spacing: 0%;
+          text-decoration: underline;
+          text-decoration-style: solid;
+          text-decoration-thickness: 0%;
+          padding-bottom: 10px;
+          font-size: 14px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .exp-wrapper {
+      width: 100%;
+      height: 70px;
+      margin-bottom: 20px;
+
+      input[type="range"] {
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        outline: none;
+      }
+
+      .highlight {
+        color: $form-purple;
+        font-size: 18px;
+        font-family: " Source Sans Pro", sans-serif;
+        font-weight: 400;
+        letter-spacing: 0%;
+      }
+    }
+    .btn-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+
+      .submit-btn {
+        width: 60%;
+        height: $height;
+        background: $form-purple;
+        color: $text-white;
+        border: none;
+        border-radius: $radius;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+}

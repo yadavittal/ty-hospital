@@ -1,0 +1,33 @@
+@import "../../styles/StyleVariables.scss";
+
+.ourServices {
+  .heading {
+    color: $primary-color;
+  }
+  .btn {
+    .icon {
+      color: $primary-color;
+    }
+  }
+  .mainContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .cardContainer{
+     display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+  }
+    .btn{
+        .icon{
+            color : $primary-color;
+            cursor: pointer;
+        }
+    }
+}

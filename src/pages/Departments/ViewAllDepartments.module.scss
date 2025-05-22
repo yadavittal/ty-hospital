@@ -1,0 +1,91 @@
+@import "../../styles/StyleVariables.scss";
+
+.all_departments_container {
+    height: 100%;
+    background-color: $lavender-bg;
+
+    .search_container {
+        background-color: $white-background;
+        padding: 2px;
+        width: 40%;
+        height: 50px;
+        margin: 40px auto;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .search_text {
+            color: $primary-color;
+            font-size: 20px;
+            margin: 0px 20px;
+            border: none;
+            background-color: $white-background;
+            width: 100%;
+        }
+
+        .search_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 35px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: $primary-color;
+            color: $text-white;
+            cursor: pointer;
+
+            .icon {
+                margin: 10px;
+                font-size: 15px;
+            }
+
+            p {
+                padding: 10px;
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .all_depts {
+        position: relative;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 40px 40px;
+    }
+
+    .dept_card {
+        background-color: $white-background;
+        border: 1px solid $lavender-bg;
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px $pure-black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform .6s;
+        cursor: pointer;
+
+        .dept_icon {
+            height: 100px;
+            width: 100px;
+        }
+
+        .dept_name {
+            font-size: 20px;
+            font-weight: 500;
+            color: $primary-color;
+        }
+    }
+
+    .dept_card:hover {
+        transform: scale(1.1)
+    }
+
+}

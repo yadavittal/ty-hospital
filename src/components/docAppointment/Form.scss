@@ -1,0 +1,137 @@
+@import "../../styles/StyleVariables.scss";
+
+.form-wrapper {
+  font-family: $font-main;
+  width: 90%;
+  margin: auto;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+}
+
+.medical-form {
+  height: inherit;
+  width: 100%;
+
+  .inner-form-wrapper {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    .radio-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      gap: 0.5rem;
+    }
+  }
+
+  h2 {
+    font-family: $font-main;
+    color: $form-purple;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .radio-group {
+    display: flex;
+    padding: 12px 0px;
+    align-items: center;
+    gap: 12px;
+
+    .radio-label {
+      font-weight: 400;
+      font-family: $font-main;
+      font-size: 15px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+      color: $pure-black;
+      white-space: nowrap;
+    }
+
+    .radio-option {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      font-family: $font-main;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: $form-purple;
+
+      input[type="radio"] {
+        accent-color: $form-purple;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .fields {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .field {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 4px;
+
+      label {
+        color: $pure-black;
+        font-family: $font-main;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+      }
+
+      input,
+      select {
+        height: $height-one;
+        padding: 0 12px;
+        border: 1px solid $form-purple;
+        border-radius: $radius-form;
+        background: $form-input-bg;
+        font-size: 15px;
+        font-weight: 500;
+        outline: none;
+      }
+    }
+
+    .phn-field .phone-input {
+      display: flex;
+      gap: 15px;
+    }
+
+    .submit-btn {
+      height: $height-one;
+      margin-top: 23px;
+      font-family: $font-main;
+      padding: 0 48px;
+      background: $form-purple;
+      color: $text-white;
+      font-size: 14px;
+      font-weight: 600;
+      border: none;
+      border-radius: $radius-form;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .form-wrapper {
+    justify-content: start;
+    margin-left: 94px;
+  }
+}

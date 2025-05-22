@@ -1,0 +1,158 @@
+@import "../../styles/StyleVariables.scss";
+
+.departments {
+    padding: 2rem;
+    font-family: Poppins;
+    width: 90%;
+    margin: auto;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: $primary-color;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+.container {
+    display: flex;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.tab {
+    min-width: 60px;
+    padding: 1rem;
+    cursor: pointer;
+    border-left: 1px solid #eee;
+    flex-basis: 60px;
+    transition: flex-grow 0.35s ease, flex-basis 0.35s ease;
+    writing-mode: vertical-rl;
+    text-align: center;
+    position: relative;
+    background-color: $text-white;
+    color: $primary-color;
+
+    &:hover {
+        background-color: lch(81.28% 30.48 314.18);
+    }
+
+    &:first-child {
+        border-left: none;
+    }
+
+    &.active {
+        flex-grow: 1;
+        flex-basis: 90%;
+        background: #f9f9f9;
+        writing-mode: horizontal-tb;
+        color: $pure-black;
+
+        &:hover {
+            transition: ease-out;
+        }
+
+        .tabHeader {
+            justify-content: flex-start;
+
+            .tabTitle {
+                writing-mode: horizontal-tb;
+                padding: 10px;
+            }
+        }
+
+        .tabContent {
+            .subContent {
+                width: 90%;
+                margin: 10px auto;
+                gap: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .description {
+                    width: 600px;
+
+                }
+
+                .button {
+                    margin-bottom: 30px;
+                    width: 336px;
+                    // height: 46px;
+                    border-radius: 28px;
+                    font-size: 18px;
+
+                }
+            }
+        }
+    }
+}
+
+.tabHeader {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 28px;
+    font-weight: 400;
+
+    .tabIndex {
+        color: $primary-color;
+        writing-mode: horizontal-tb;
+    }
+
+    .tabTitle {
+        writing-mode: sideways-lr;
+        font-size: 28px;
+        font-weight: 400
+    }
+}
+
+
+
+.tabContent {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    color: $medium-grey-text;
+
+    .subContent {
+        text-align: left;
+
+        .description {
+            font-size: 0.9rem;
+        }
+
+        .button {
+            background-color: $primary-color;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+
+    .image {
+        width: 90%;
+        margin: auto;
+        max-height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+
+    }
+}
+
+@media (max-width: 1200px) {
+    .departments {
+        margin-left: 9%;
+    }
+}

@@ -1,0 +1,68 @@
+@import "../../../styles/StyleVariables.scss";
+
+.doctorDetailsContainer {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    .imageContainer {
+        width: 80%;
+    }
+
+    .secondContainer {
+        width: 40%;
+
+        .heading {
+            width: 541px;
+            height: 152px;
+            font-weight: 500;
+
+            .whoWeAre {
+                color: $black-text;
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+
+            .vHospital {
+                font-size: 35px;
+                color: $primary-color;
+                margin-bottom: 20px;
+            }
+        }
+
+        .details {
+            font-size: 15px;
+            font-weight: 400;
+            color: $grey-text;
+            width: 77%;
+            margin-bottom: 20px;
+        }
+
+        .listItem {
+            font-size: 15px;
+            color: $medium-grey-text;
+            margin-bottom: 15px;
+        }
+
+        .bendRightArrow {
+            display: inline;
+        }
+
+        .text {
+            margin-left: 20px;
+        }
+
+    }
+}
+
+@media (width: 1200px) {
+    .doctorDetailsContainer {
+        .secondContainer {
+            width: 35%;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import "../../styles/StyleVariables.scss";
+
+.card {
+  background: #f8f6ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba($pure-black, 0.1);
+  padding: 1rem;
+  max-width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0px 0px 80px;
+  color: $dark-grey-text;
+  font-family: Poppins;
+}
+
+.card:hover {
+  transform: scale(1.05);
+
+  .readMore,
+  .iconWrapper {
+    color: $primary-color;
+  }
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 400;
+  ;
+  margin-bottom: 1rem;
+}
+
+.readMore {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}

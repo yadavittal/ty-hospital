@@ -1,0 +1,105 @@
+@import "../../styles/StyleVariables.scss";
+
+.headings {
+    margin-left: 10%;
+    font-size: 55px;
+    color: $dark-grey-text;
+}
+
+.speciality {
+    font-weight: 700;
+    color: $purple-color;
+}
+
+.para {
+    font-size: 29px;
+    margin-left: 10%;
+    margin-top: 2%;
+    color: $light-grey;
+    margin-bottom: 2%;
+    font-weight: 500;
+}
+
+.button {
+    padding: 5px 20px 10px 20px;
+    background-color: $purple-color;
+    color: $text-white;
+    border-radius: 10px;
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 25px;
+    margin-top: 2%;
+}
+
+.video {
+    margin-left: 5%;
+    margin-bottom: 1%;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.video:hover {
+    transform: scale(1.2);
+    border-radius: 50%;
+    outline: none;
+}
+
+.videoText {
+    margin-left: 1%;
+    margin-top: 0%;
+    display: inline-block;
+    color: $dark-grey-text;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.signUpText {
+    padding: 2% 0% 0% 10%;
+}
+
+.member {
+    font-size: 20px;
+    color: $dark-grey-text;
+    font-weight: 500;
+}
+
+.signup {
+    font-size: 20px;
+    color: $purple-color;
+    font-weight: 500;
+}
+
+.doctorImage {
+    max-width: 100%;
+    height: 80%;
+}
+
+.doctorImage {
+    max-width: 100%;
+    height: 80%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctorImage:hover {
+    transform: scale(1.09);
+}
+
+@media (max-width: 1200px) {
+    .doctorImage {
+        width: 84%;
+        height: 84%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .doctorImage:hover {
+        transform: scale(1.09);
+    }
+}

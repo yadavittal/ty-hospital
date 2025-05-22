@@ -1,0 +1,74 @@
+@import "../../../styles/StyleVariables.scss";
+
+.profileCard {
+    border: 1px solid $text-grey-color;
+    padding-top: 25px;
+    width: 30%;
+    height: 350px;
+}
+
+.profileCard:hover {
+    background: $light-purple-color;
+}
+
+.numberOfStars {
+    font-size: 15px;
+    font-weight: 500;
+    color: $text-white;
+}
+
+.starCard {
+    background-color: $primary-color;
+    height: 25px;
+    width: 65px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    margin-left: 60%;
+}
+
+.name {
+    font-size: 22px;
+    font-weight: 600;
+    color: $pure-black;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.title {
+    font-size: 19px;
+    font-weight: 400;
+    color: $grey;
+    text-align: center;
+}
+
+.numberOfReviews {
+    font-size: 15px;
+    font-weight: 500;
+    color: $grey;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image {
+    border-radius: 100%;
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:1200px) {
+    .profileCard {
+        width: 31%;
+    }
+    
+    .profileCard:hover {
+        background: $light-purple-color;
+    }
+}

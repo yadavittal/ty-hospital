@@ -1,0 +1,80 @@
+@import "../../styles/StyleVariables.scss";
+
+.heroSection {
+  width: 100vw;
+  height: 100vh;
+  padding: 85px 333px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.backgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.heroOverlay {
+  height: 350px;
+  width: 1253px;
+  margin-top: 165px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  align-items: center;
+  text-align: center;
+  color: $text-white;
+  z-index: 1;
+}
+
+.getIn {
+  height: 48px;
+  width: inherit;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 47px;
+  letter-spacing: -1.08px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.heading {
+  height: 150px;
+  width: inherit;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 65px;
+  letter-spacing: -1px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.contactBtn {
+  width: 350px;
+  // height: 75px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  padding: 25px 15px;
+  line-height: 30px;
+  text-align: center;
+  color: $text-white;
+  border: 2px solid $text-white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $text-white;
+    color: $pure-black;
+  }
+
+}
