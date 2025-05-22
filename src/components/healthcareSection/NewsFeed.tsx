@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./NewsFeed.module.scss";
 import imgUrl  from "../../assets/jpg/newsImage.jpg";
 import { newsItems } from "../../constants/newItem";
-import BackArrow from "../../assets/icons/BackArrow.svg"
+import BackArrow from "../../assets/icons/backArrow.svg";
 
 export interface NewsItem {
   date: string;
